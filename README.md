@@ -10,7 +10,7 @@
 
 ##  **<p> <h2  align="center"> Aplicação front end 📟 👨‍💻 </h2> </p>**
 
-## <p> <h2 align="center">Wildbeast é um projeto que foi desenvolvido no curso de CSS Grid Layout da [Origamid](https://www.origamid.com/) e eu reestruturei o seu CSS utilizando Less</h2> </p>
+## <p> <h2 align="center">Wildbeast é um projeto que foi desenvolvido no curso de CSS Grid Layout da [Origamid](https://www.origamid.com/) e eu reestruturei o seu CSS utilizando Less, utilizando práticas de criação de variáveis, Mixins, NEST (Aninhamento), Import, entre outras técnicas</h2> </p>
 
 # **Aplicação Web** 💻
 
