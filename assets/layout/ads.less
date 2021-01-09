@@ -1,0 +1,17 @@
+// ANUNCIOS
+
+.anuncios {
+  grid-area: anuncios;
+  background: @background-color-ads;
+  display: grid;
+  align-content: start; //alinhando ao incio
+  .padding-default();
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); //o auto-fit tenta colocar elementos q tenham, no mínimo 150px de largura, caso contrário, irá quebrar em mais uma linha
+
+  img {
+    .borda-arredondada();
+    .sombra();
+  }
+  
+}

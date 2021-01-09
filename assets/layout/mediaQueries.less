@@ -1,0 +1,99 @@
+//Layout para tablet
+@media @tablet {
+  .estrutura {
+    grid-template-areas: 
+    "header   header    header"
+    "sidenav  content   content" 
+    "sidenav  anuncios  anuncios"
+    "footer   footer    footer" 
+    ;
+
+    .footer p {
+      .fonte-pequena(1.35rem);
+    }
+
+  }
+
+}
+
+//Layout para celular
+@media @mobile {
+  .estrutura {
+    grid-template-columns: 100%; //pegando tolo o layout em apenas uma coluna
+    grid-template-areas: //setando apenas uma coluna
+    "header"
+    "sidenav"
+    "content"
+    "anuncios"
+    "footer"
+    ;
+
+    .header {
+      grid-template-columns: auto;
+
+      .logo {
+        margin-bottom: 20px;
+      }
+
+      nav a {
+        .fonte-media(1rem);  
+      }
+
+      li + li {
+        margin-left: 10px;
+      }
+
+    }
+
+    .sidenav {
+      padding: 0 30px;
+      position: relative;
+      overflow-x: auto; //setando barra lateral para mobile
+      -webkit-overflow-scrolling: touch; //escondendo barra de scroll
+      -ms-overflow-style: -ms-autohiding-scrollbar; //escondendo a barra de scroll
+
+      &::after { //setando seta para informar o scroll
+        content: "→";
+        position: absolute;
+        top: 5px;
+        right: 30px;
+        color: rgba(0, 0, 0, 0.35);
+        animation: seta 0.5s ease-in 0s infinite alternate;
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          flex: 1 0 60px; //flex-basis de 60px
+          a {
+            margin: 30px 30px 30px 0;
+          }
+
+        }
+
+      }
+
+
+    }
+
+  }
+
+}
+
+//conteudo em apenas uma coluna
+@media @mobile-one-column {
+  .content {
+    grid-template-columns: auto;
+
+    img {
+      justify-self: center;
+    }
+
+  }
+
+  .anuncios img {
+    justify-self: center;
+  }
+
+}

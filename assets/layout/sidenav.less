@@ -1,0 +1,26 @@
+// SIDENAV
+
+.sidenav {
+  grid-area: sidenav;
+  background: @background-color-sidenav;
+  .padding-default();
+
+  li a {
+    display: block;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 0 auto 30px auto;
+    .padding-default(20px);
+    background: white;
+    .sombra();
+    .borda-arredondada();
+    transition: 100ms ease-out;
+
+    &:hover {
+      background: @background-color-sidenav-hover;
+      transform: scale(1.06);
+    }
+    
+  }
+
+}
